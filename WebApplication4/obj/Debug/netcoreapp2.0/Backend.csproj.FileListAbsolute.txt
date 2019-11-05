@@ -1,0 +1,10 @@
+C:\Users\Valeria\source\repos\WebApplication1\WebApplication4\bin\Debug\netcoreapp2.0\Backend.deps.json
+C:\Users\Valeria\source\repos\WebApplication1\WebApplication4\bin\Debug\netcoreapp2.0\Backend.runtimeconfig.json
+C:\Users\Valeria\source\repos\WebApplication1\WebApplication4\bin\Debug\netcoreapp2.0\Backend.runtimeconfig.dev.json
+C:\Users\Valeria\source\repos\WebApplication1\WebApplication4\bin\Debug\netcoreapp2.0\Backend.dll
+C:\Users\Valeria\source\repos\WebApplication1\WebApplication4\bin\Debug\netcoreapp2.0\Backend.pdb
+C:\Users\Valeria\source\repos\WebApplication1\WebApplication4\obj\Debug\netcoreapp2.0\Backend.csproj.CoreCompileInputs.cache
+C:\Users\Valeria\source\repos\WebApplication1\WebApplication4\obj\Debug\netcoreapp2.0\Backend.AssemblyInfoInputs.cache
+C:\Users\Valeria\source\repos\WebApplication1\WebApplication4\obj\Debug\netcoreapp2.0\Backend.AssemblyInfo.cs
+C:\Users\Valeria\source\repos\WebApplication1\WebApplication4\obj\Debug\netcoreapp2.0\Backend.dll
+C:\Users\Valeria\source\repos\WebApplication1\WebApplication4\obj\Debug\netcoreapp2.0\Backend.pdb
