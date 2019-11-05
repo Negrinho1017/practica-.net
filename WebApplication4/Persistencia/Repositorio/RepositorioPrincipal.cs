@@ -42,10 +42,6 @@ namespace Backend.Persistencia.Repositorio
 
         IEnumerable<Persona> IRepositorioPrincipal<Persona>.List()
         {
-            if (personas.Count() == 0)
-            {
-                ListaUtil.AddMany(personas, camilo, camila, eduardo);
-            }
             return PersonaBuilder.convertirDeEntidadADominioLista(personas);
         }
     }
