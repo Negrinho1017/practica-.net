@@ -12,9 +12,6 @@ namespace Backend.Persistencia.Repositorio
     public class RepositorioPrincipal : IRepositorioPrincipal<Persona>
     {
         public static List<PersonaEntidad> personas = new List<PersonaEntidad>();
-        PersonaEntidad camilo = new PersonaEntidad("Camilo", "1", "Colombia", 24);
-        PersonaEntidad camila = new PersonaEntidad("Camila", "2", "Venezuela", 23);
-        PersonaEntidad eduardo = new PersonaEntidad("Eduardo", "3", "Chile", 23);
 
         void IRepositorioPrincipal<Persona>.Add(Persona entity)
         {

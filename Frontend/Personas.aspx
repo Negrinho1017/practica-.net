@@ -48,9 +48,9 @@
                 </div>
                 <div class="modal-footer">
                     <span data-bind="if: actualizar">
-                        <button type="submit" class="btn btn-success" data-bind='click: actualizarUsuarios' data-dismiss="modal">Actualizar usuario</button></span>
+                        <button type="submit" class="btn btn-success" data-bind='click: actualizarUsuarios'>Actualizar usuario</button></span>
                     <span data-bind="ifnot: actualizar">
-                        <button type="submit" class="btn btn-success" data-bind='click: registrarUsuario' data-dismiss="modal">Registrar usuario</button></span>
+                        <button type="submit" class="btn btn-success" data-bind='click: registrarUsuario'>Registrar usuario</button></span>
                     <button class="btn btn-success" data-dismiss="modal">Cancelar</button>
                 </div>
             </div>
@@ -58,5 +58,6 @@
     </div>
     <script type="text/javascript" src="js/servicios.js"></script>
     <script type="text/javascript" src="js/personas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     </html>
 </asp:Content>

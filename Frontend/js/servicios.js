@@ -1,38 +1,50 @@
 ﻿function httpGet() {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", url, false);
-    xmlHttp.send(null);
-    return JSON.parse(xmlHttp.responseText);
+    return JSON.parse($.ajax({
+        type: "GET",
+        url: url,
+        async: false
+    }).responseText);
 }
 
 function httpGetById(id) {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", url + `/${id}`, false);
-    xmlHttp.send(null);
-    return JSON.parse(xmlHttp.responseText);
+    return JSON.parse($.ajax({
+        type: "GET",
+        url: url + `/${id}`,
+        async: false
+    }).responseText);
 }
 
 function httpDelete(id) {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("DELETE", url + `/${id}`, false);
-    xmlHttp.setRequestHeader('Access-Control-Allow-Origin', '*');
-    xmlHttp.send(null);
+    $.ajax({
+        type: "DELETE",
+        url: url + `/${id}`,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        async: false
+    });
 }
 
 function httpPut(id, object) {
-    var xmlHttp = new XMLHttpRequest();
-    var json = JSON.stringify(object);
-    xmlHttp.open("PUT", url + `/${id}`, false);
-    xmlHttp.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-    xmlHttp.send(json);
+    $.ajax({
+        type: "PUT",
+        url: url + `/${id}`,
+        data: JSON.stringify(object),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        async: false
+    });
 }
 
 function httpPost(object) {
-    var xmlHttp = new XMLHttpRequest();
-    var json = JSON.stringify(object);
-    xmlHttp.open("POST", url, false);
-    xmlHttp.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-    xmlHttp.send(json);
+    $.ajax({
+        type: "POST",
+        url: url,
+        data: JSON.stringify(object),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        async: false
+    });
 }
 
 var url = 'http://localhost:57661/api/main';
+
